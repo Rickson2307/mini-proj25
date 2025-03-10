@@ -4,7 +4,7 @@
     <div id="category_model" class="header-cate-model main-gambo-model modal fade" tabindex="-1" role="dialog" aria-modal="false">
         <div class="modal-dialog category-area" role="document">
             <div class="category-area-inner">
-                <div class="modal-header">
+                <div class="modal-header">m
                     <button type="button" class="close btn-close" data-dismiss="modal" aria-label="Close">
                         <i class="uil uil-multiply"></i>
                     </button>
@@ -15,7 +15,7 @@
                     </div>
                     <ul class="category-by-cat">
                         {% for category in categories %}
-                            <li>
+                            <li>   
                                 <a href="{% url 'products:category' category.slug %}" class="single-cat-item">
                                     <div class="icon">
                                         <img src="{{ category.image.url }}" alt="">
