@@ -179,8 +179,8 @@
                                 <div class="cart-text">
                                     <h4>{{ item.product.name }}</h4>
                                     <div class="cart-item-price $">
-                                        ${{ item.product.selling_price }} x {{ item.quantity }}
-                                        <span>{{ settings.currency }}{{ item.subtotal }}</span>
+                                        ₹{{ item.product.selling_price }} x {{ item.quantity }}
+                                        <span>₹{{ item.subtotal }}</span>
                                     </div>
                                 </div>
                             </div>
@@ -189,16 +189,16 @@
                         <div class="total-checkout-group">
                             <div class="cart-total-dil">
                                 <h4>Subtotal</h4>
-                                <span>{{ settings.currency }}{{ cart.total_price }}</span>
+                                <span>₹{{ cart.total_price }}</span>
                             </div>
                             <div class="cart-total-dil pt-3">
                                 <h4>Delivery Charges</h4>
-                                <span>{{ settings.currency }}50</span>
+                                <span>₹50</span>
                             </div>
                         </div>
                         <div class="main-total-cart">
                             <h2>Total</h2>
-                            <span>{{ settings.currency }}{{ cart.total_price|add:"50" }}</span>
+                            <span>₹{{ cart.total_price|add:"50" }}</span>
                         </div>
                         <div class="payment-secure">
                             <button class="next-btn16 hover-btn" type="button" id="placeOrderBtn">Place Order</button>
