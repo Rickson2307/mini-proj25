@@ -661,7 +661,7 @@
                                                 <div id="variant-details" class="variant-details" style="display: none;">
                                                     <div class="variant-info">
                                                         <div class="variant-price">
-                                                            {{ settings.currency }} <span id="variant-price"></span>
+                                                            ₹ <span id="variant-price"></span>
                                                         </div>
                                                         <div class="variant-stock">
                                                             <span id="variant-stock" class="stock-badge"></span>
@@ -686,7 +686,7 @@
                                                                 </div>
                                                             </div>
                                                             <div class="price-amount">
-                                                                {{ settings.currency }}{{ product.variants.first.selling_price }} - {{ settings.currency }}{{ product.variants.last.selling_price }}
+                                                                ₹{{ product.variants.first.selling_price }} - ₹{{ product.variants.last.selling_price }}
                                                             </div>
                                                         </div>
                                                     </li>
@@ -701,9 +701,9 @@
                                                             {% endif %}
                                                         </div>
                                                         <div class="price-amount">
-                                                            {{ settings.currency }}{{ product.selling_price }}
+                                                            ₹{{ product.selling_price }}
                                                             {% if product.discount_percentage > 0 %}
-                                                                <span class="original-price">{{ settings.currency }}{{ product.original_price }}</span>
+                                                                <span class="original-price">₹{{ product.original_price }}</span>
                                                             {% endif %}
                                                         </div>
                                                     </div>
@@ -797,9 +797,9 @@
                                 <div class="similar-item-info">
                                     <h5>{{ product.name }}</h5>
                                     <div class="price-info">
-                                        <strong>{{ settings.currency }}{{ product.selling_price }}</strong>
+                                        <strong>₹{{ product.selling_price }}</strong>
                                         {% if product.discount_percentage > 0 %}
-                                            <span class="old-price">{{ settings.currency }}{{ product.original_price }}</span>
+                                            <span class="old-price">₹{{ product.original_price }}</span>
                                             <span class="discount">-{{ product.discount_percentage }}%</span>
                                         {% endif %}
                                     </div>
@@ -894,9 +894,9 @@
                                 </p>
                                 <h4>{{ product.name }}</h4>
                                 <div class="product-price">
-                                    {{ settings.currency }}{{ product.selling_price }} 
+                                    ₹{{ product.selling_price }} 
                                     {% if product.discount_percentage > 0 %}
-                                        <span>{{ settings.currency }}{{ product.original_price }}</span>
+                                        <span>₹{{ product.original_price }}</span>
                                     {% endif %}
                                 </div>
                                 {% if product.stock > 0 %}
